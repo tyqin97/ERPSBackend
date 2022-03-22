@@ -33,6 +33,7 @@ const main = async () => {
 
   app.use("/SP", require("./routes/sp"));
   app.use("/User", require("./routes/user"));
+  app.use("/UOM", require("./routes/uom"));
   app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
   const PORT = process.env.PORT || 4000;
